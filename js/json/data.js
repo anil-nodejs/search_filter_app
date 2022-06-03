@@ -1,3 +1,80 @@
-var all_json_data_list = [{ "name": "Venkatesh Kumar", "gender": "male", "department": "tech_team", "profile": "Teachnical Lead", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry" },
-{ "name": "Anil Yadav", "gender": "male", "department": "tech_team", "profile": "Software Engineer", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." }, { "name": "Saif", "gender": "male", "department": "tech_team", "profile": "Team Lead", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry" },
-{ "name": "Sanket Shinde", "gender": "male", "department": "tech_team", "profile": "Senior Software Engineer", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry" }, { "name": "Anish joy", "gender": "male", "department": "graphics", "profile": "Graphics Designer", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry" }];
+var all_json_data_list = [
+  {
+    name: "Venkatesh Kumar",
+    gender: "male",
+    department: "tech_team",
+    profile: "Teachnical Lead",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Anil Yadav",
+    gender: "male",
+    department: "tech_team",
+    profile: "Software Engineer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    name: "Saif",
+    gender: "male",
+    department: "tech_team",
+    profile: "Team Lead",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Sanket Shinde",
+    gender: "male",
+    department: "tech_team",
+    profile: "Senior Software Engineer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Anish joy",
+    gender: "male",
+    department: "graphics",
+    profile: "Graphics Designer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Shrishti",
+    gender: "female",
+    department: "graphics",
+    profile: "Graphics Designer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Abhijeet",
+    gender: "male",
+    department: "graphics",
+    profile: "Graphics Designer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+
+  {
+    name: "Siddarth Satyanath",
+    gender: "male",
+    department: "business",
+    profile: "Business Intelligence",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Adhvith Dhuddu",
+    gender: "male",
+    department: "founder",
+    profile: "Founder/CEO",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Mha",
+    gender: "male",
+    department: "filter",
+    profile: "AR Develoer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+  {
+    name: "Faiyaz",
+    gender: "male",
+    department: "filter",
+    profile: "Snap Develoer",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+];

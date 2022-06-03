@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>You can get the employees title with descption in AliveNow</title>
-    <link data-require="bootstrap@*" data-semver="4.1.3" rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link
+      data-require="bootstrap@*"
+      data-semver="4.1.3"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script data-require="bootstrap@*" data-semver="4.1.3"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/semantic/semantic.min.css">
+    <script
+      data-require="bootstrap@*"
+      data-semver="4.1.3"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/semantic/semantic.min.css" />
     <script src="js/semantic/semantic.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .noContent {
+        color: #000 !important;
+        background-color: transparent !important;
+        pointer-events: none;
+      }
+      #loadMore {
+        background-color: grey;
+        border: none;
+        outline: none;
+        margin: 30px auto;
+        text-align: center;
+        display: block;
+        color: white;
+        height: 40px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-<body>
-    <h3>You can get the employees title with descption in AliveNow</h3>
-    <div class="container-fluid dashboard">
-        <div class="row container" style="margin: auto;">
-            <div class="ui input col-sm-4">
-                <input type="text" id="myInput" placeholder="Search...">
-            </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2 " style="text-align: right;">
-                <select class="level ui dropdown">
-                    <option value="all">All</option>
-                    <option value="tech_team">Tech Team</option>
-                    <option value="graphics"> Graphics</option>
-                    <option value="business">Business</option>
-                    <option value="animator">Animator</option>
-                    <option value="founder">Founder/CEO</option>
-                </select>
-            </div>
-            <div class="col-sm-2 " style="text-align: right;">
-                <select class="gender ui dropdown">
-                    <option value="all">All Genders</option>
-                    <option value="female"> Female</option>
-                    <option value="male"> Male</option>
-                </select>
-            </div>
-            <div class="col-sm-2 " style="text-align: right;">
-                <select class="employees ui dropdown" id="empList">
-                    <option value="all">All Employee</option>
-                </select>
-            </div>
+  <body>
+    <h3>AliveNow Employee Details</h3>
+    <div class="container-fluid dashboard" id="mainDiv">
+      <div class="row container" style="margin: auto">
+        <div class="ui input col-sm-4">
+          <input type="text" id="myInput" placeholder="Search..." />
         </div>
-        <div class="container all-example-list">
-            <!-- all added the list  -->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2" style="text-align: right">
+          <select class="level ui dropdown">
+            <option value="all">All</option>
+            <option value="tech_team">Tech Team</option>
+            <option value="graphics">Graphics</option>
+            <option value="business">Business</option>
+            <option value="filter">Filter</option>
+            <option value="animator">Animator</option>
+            <option value="founder">Founder/CEO</option>
+          </select>
         </div>
+        <div class="col-sm-2" style="text-align: right">
+          <select class="gender ui dropdown">
+            <option value="all">All Genders</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </div>
+        <div class="col-sm-2" style="text-align: right">
+          <select class="employees ui dropdown" id="empList">
+            <option value="all">All Employee</option>
+          </select>
+        </div>
+      </div>
+      <div class="container all-example-list">
+        <!-- all added the list  -->
+      </div>
+      <button id="loadMore">Load More</button>
     </div>
     <script src="js/search.js"></script>
     <script src="js/json/data.js"></script>
     <script src="js/addData.js"></script>
     <script src="js/script.js"></script>
-
-</body>
-
+    <script>
+      $(".card").slice(0, 4).show();
+      $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+        $(".card:hidden").slice(0, 4).slideDown();
+        if ($(".card:hidden").length == 0) {
+          $("#loadMore").hide();
+        }
+      });
+    </script>
+  </body>
 </html>

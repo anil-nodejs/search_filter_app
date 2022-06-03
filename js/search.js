@@ -1,6 +1,5 @@
 $("select.level, select.gender, select.employees").change(updateEmployees);
 $("#myInput").on("keyup", updateEmployees);
-
 function updateEmployees() {
     var level = $('select.level').val();
     var gender = $('select.gender').val();
@@ -31,6 +30,7 @@ function updateEmployees() {
                 okSearch = $(this).text().toLowerCase().indexOf(search) > -1;
                 console.log("YYYYYYYYYYYYY")
             }
+            
             //only fade a room if it satisfies all four conditions
             return okLevel && okGender && okEmployees && okSearch;
         }).fadeIn('fast');
